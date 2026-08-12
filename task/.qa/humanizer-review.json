@@ -1,0 +1,52 @@
+{
+  "skill": "humanizer-zh",
+  "result": "PASS",
+  "reviewed_scopes": [
+    "任务名称",
+    "任务概要",
+    "任务prompt",
+    "关键动作",
+    "评分表",
+    "环境依赖",
+    "软件步骤",
+    "输入材料中的自然语言",
+    "Reference中的用户可见文字",
+    "关键标准答案工作簿全部自然语言",
+    "任务规格工作簿全部自然语言"
+  ],
+  "scores": {
+    "直接性": 9,
+    "节奏": 9,
+    "信任度": 10,
+    "真实性": 9,
+    "精炼度": 9,
+    "total": 46
+  },
+  "minimum_total": 45,
+  "notes": [
+    "标题保留原有内容安全回放和Airflow迁移业务，删除Dataset触发、动态映射、资源池限流修复等标题概念堆叠。",
+    "Prompt从现行串行DAG造成的值班问题进入，四段分别交代故障、材料、Airflow工作和维护窗消费者，段落长度有变化。",
+    "固定任务数、固定报告数、固定事件总量、PASS汇总、双目录和Windows证明均未写入题面或Reference。",
+    "窗口、策略分片、Dataset、资源池、维护窗、观察项和退回条件均来自业务输入，不使用无来源数字。",
+    "Airflow只承担DAG导入、序列化、Dataset、动态映射、Airflowpool和setup及teardown关系，没有声称调度器已执行回放。",
+    "Reference只含候选DAG、回放计划、资源池分配、Dataset血缘、DAG结构、发布摘要和目录说明，没有生成器、测试器、QA文件或固定PASS。",
+    "人工复读未发现宣传腔、否定式排比、模糊权威、伪引用、软件能力幻觉、无消费者交付物或推理断裂。"
+  ],
+  "reviewed_artifacts_sha256": {
+    "任务名称.txt": "d2d697ce45e03a93603655886a43b2bed65ad5a05bbde8ebe3477b43d1533bdf",
+    "任务概要.txt": "87086f4cd33007bacf01cacc9800c38a239f65c9d8b82b9a0e25fb54c0850828",
+    "任务prompt.txt": "5bbe315ba30dfbddbae4b1a121eec5a0db3517387a60558572193a08828555e0",
+    "关键动作.txt": "1e23cfe7437ee7a51d4b77a8a4e2ca0c3d6848bcf00a551b8752f2a54e67c0be",
+    "评分表.txt": "31871337fd5edeac31db3b5990c95bc90b8a45cfa112ee6624517d1c844dfc24",
+    "环境依赖.txt": "efbef936d870874a919fc2a9d495bf095af0dd591af1cf56472fe8f3633f7fa7",
+    "相关专业软件的关键步骤.txt": "127a042bd9003c3597b1ac8ad6b60fc4a5234165f77badc05aa67b872b384df7",
+    "task_fields.json": "356a5d7c2232fd700c967e0b8835f9a1dde6f1a74272b9fd9b0f458c0873ab54",
+    "输入数据包.zip": "a5e7a9fdb14482f86d63d4451c9b406ddc29fb75ddc83d415e07648d3de05d6a",
+    "reference.zip": "cadc772f652e2f162afbc884599ffdec4dc65cc511e03607d87d9e34fff6a731",
+    "关键标准答案.xlsx": "1f1ba59304c7989ebc234bce569b073dc6751504c51c044bd15e8b5f51682f45",
+    "任务规格转化.xlsx": "456af587482c0dc5016b0ce41a889081edf5e23d416971cab26e3be72f33fbc3",
+    "ALE-专家数据作业表_q3011.csv": "e74a4064fa694efeb2fb0fe7682acc68448658c66d021c801e1159add5d5c148"
+  },
+  "online_ai_field_used_as_conclusion": false,
+  "reviewed_on": "2026-08-13"
+}

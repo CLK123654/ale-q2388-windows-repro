@@ -1,0 +1,6 @@
+1. 在ApacheAirflow环境中读取batch_registry.csv、shard_manifest.csv、processing_contract.json和现行DAG。
+2. 将批次发现放入TaskFlow任务，并用expand把运行期分片列表交给mapped task。
+3. 在mapped task中核对记录数与质量码，按语义签名处理或复用checkpoint，异常分片记录拒绝原因。
+4. 让汇总任务等待全部分片形成结果，再整理分片处理账和批次摘要。
+5. 用DagBag载入候选DAG，确认动态映射、汇总关系和维护窗参数可以读取。
+6. 运行批次入口，生成候选DAG、分片处理账、批次摘要、checkpoint和维护窗说明。
