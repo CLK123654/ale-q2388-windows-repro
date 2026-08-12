@@ -1,4 +1,4 @@
-1. 在ApacheAirflow环境中读取batch_registry.csv、shard_manifest.csv、processing_contract.json和现行DAG。
+1. 在ApacheAirflow环境中读取batch_registry.csv、manifests目录中的分片清单、processing_contract.json和现行DAG。
 2. 将批次发现放入TaskFlow任务，并用expand把运行期分片列表交给mapped task。
 3. 在mapped task中核对记录数与质量码，按语义签名处理或复用checkpoint，异常分片记录拒绝原因。
 4. 让汇总任务等待全部分片形成结果，再整理分片处理账和批次摘要。
